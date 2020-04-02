@@ -3,9 +3,13 @@ def find_min_value(array)
   min_value = -1
   while count < array.length do
     if min_value > array[count]
-      min_value = array[count]
+      count += 1
     end
+    if min_value < array[count]
+      min_value = array
+    
     count += 1
+  end
   end
   min_value
 end
